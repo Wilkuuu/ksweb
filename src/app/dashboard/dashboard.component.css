@@ -1,0 +1,81 @@
+.logo {
+    max-width: 399px;
+    min-width: 399px;
+    max-height: 431px;
+    min-height: 431px;
+    position: relative;
+}
+
+.main-board {
+    margin-top: 170px;
+}
+
+.main-text {
+    font-size: 57px;
+    font-family: raleway, sans-serif;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    animation: type 5s steps(60, end) forwards;
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+
+}
+#last{
+    animation: type1 5s steps(60, end) forwards;
+}
+.bold-text{
+    font-weight: bold;
+}
+
+
+.main-text:nth-child(2) {
+    padding-top: 250px;
+    animation-delay: 5s;
+}
+.navButtons{
+    opacity: 0;
+    animation: showButton 1s steps(60, end) forwards;
+
+}
+
+#last:nth-child(3){
+    padding-top: 350px;
+    animation-delay: 10s;
+}
+
+@keyframes type {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        width: 20em;
+        opacity: 0;
+    }
+}
+@keyframes type1 {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        width: 20em;
+        opacity: 1;
+    }
+}
+@keyframes showButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
