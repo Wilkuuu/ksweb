@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.text {
+    font-size: 3vh;
+}
+.title-subpage{
+    font-weight: bold;
+    font-size: 4vh;
+}
+.description {
+    font-size: 4vh;
+}
+.watermark{
+    position: absolute;
+    max-height: 15vh;
+    padding: 3vh;
+}

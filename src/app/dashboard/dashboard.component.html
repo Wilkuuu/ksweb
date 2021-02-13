@@ -1,20 +1,34 @@
-<div class="container">
+<div >
     <div class="row main-board">
-        <div class="col">
+        <div class="col ">
+<!--        <div class="col d-none d-xl-block ">-->
             <div class="main-text"><span class="bold-text">Hi</span>, <br> My name is <span class="bold-text">Klaudia Szumacher</span>
             </div>
             <div class="main-text">I design and paint</div>
             <div class="main-text" id="last"><span class="bold-text">Let me show You...</span></div>
         </div>
-        <div align="right" class="col">
+<!--        <div class="col d-xl-none">-->
+<!--            <div class="main-text mobile-text"><span class="bold-text">Hi</span>, <br> My name is <span class="bold-text">Klaudia Szumacher</span>-->
+<!--            </div>-->
+<!--            <div class="main-text mobile-text">I design and paint</div>-->
+<!--            <div class="main-text mobile-text" id="last"><span class="bold-text">Let me show You...</span></div>-->
+<!--        </div>-->
+        <div align="right" class="col d-none d-xl-block logoCol">
             <img class="logo" src="./assets/logo.svg" alt="">
+        </div>
+        <div align="right" class="col d-xl-none">
+            <img class="logo-sm" src="./assets/logo.svg" alt="">
+        </div>
+        <div class="col d-none d-xl-block">
+            <div class="navButtonRight" [routerLink]="['/art']"></div>
+        </div>
+        <div class="col d-xl-none">
+            <div class="navButtonRightSm" [routerLink]="['/art']"></div>
         </div>
     </div>
     <div class="row lastRow">
-        <div class="col"></div>
-        <div class="col">
-            <div class="navButtonDown" [routerLink]="['/portfolio']"></div>
+        <div class="col align-self-center">
+            <div class="navButtonDown"></div>
         </div>
     </div>
-    <div class="col"></div>
 </div>

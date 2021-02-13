@@ -1,3 +1,4 @@
+@import '~fullpage.js/dist/fullpage.min.css';
 @keyframes heartbeat {
     from {
         -webkit-transform: scale(1);
@@ -32,3 +33,14 @@
         animation-timing-function: ease-out;
     }
 }
+body
+{
+    padding-bottom:0;
+}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
