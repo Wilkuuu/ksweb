@@ -8,12 +8,22 @@ import { HopsyComponent } from './hopsy/hopsy.component';
 import { SkrybeComponent } from './skrybe/skrybe.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 @NgModule({
-  declarations: [GrafitComponent, Bh1Component, Bh2Component, SwistComponent, HopsyComponent, SkrybeComponent, PortfolioComponent],
-  imports: [
-    CommonModule,
-    PortfolioRoutingModule
-  ]
+    declarations: [GrafitComponent, Bh1Component, Bh2Component, SwistComponent, HopsyComponent, SkrybeComponent, PortfolioComponent, GaleriaComponent],
+    exports: [
+        PortfolioComponent,
+        GrafitComponent,
+        Bh1Component,
+        Bh2Component,
+        SwistComponent,
+        SkrybeComponent,
+        GaleriaComponent
+    ],
+    imports: [
+        CommonModule,
+        PortfolioRoutingModule
+    ]
 })
 export class PortfolioModule { }

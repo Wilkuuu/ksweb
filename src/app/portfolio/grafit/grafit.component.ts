@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+import { AnimacjaService } from '../../service/animacja.service';
 
 @Component({
   selector: 'app-grafit',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrafitComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private animacjaService: AnimacjaService) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+          this.animacjaService.setAnimation(params.animacja);
+        }
+     );
   }
 
 }

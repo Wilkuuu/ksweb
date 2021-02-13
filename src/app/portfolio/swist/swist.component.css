@@ -1,0 +1,25 @@
+.swist-bg{
+
+    /* The image used */
+    background-image: url("../../../assets/4_swist/swist_bg.png");
+    /* Full height */
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.logo-swist{
+    max-width: 33vw;
+    margin-top: 15vh;
+    margin-left: 9vw;
+}
+
+.rapee{
+    float:left;
+    max-width: 10rem;
+}
+.text-content{
+    padding: 25vh;
+}
