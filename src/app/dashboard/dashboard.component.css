@@ -7,6 +7,7 @@
     max-width: 35vh;
     position: relative;
     animation: resize 2s ease-in 1s forwards;
+    filter:opacity(0.6);
 }
 
 .logo-sm {
@@ -26,7 +27,7 @@
 .main-text {
     font-size: 4vw;
     font-family: raleway, sans-serif;
-    color: #000000;
+    color: var(--text-color);
     white-space: nowrap;
     overflow: hidden;
     width: 0;
