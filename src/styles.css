@@ -33,7 +33,6 @@ body{
     transform: rotate(5deg) scale(1.4);
 }
 .image-wrapper{
-    position: absolute;
     overflow: hidden;
 
 }
