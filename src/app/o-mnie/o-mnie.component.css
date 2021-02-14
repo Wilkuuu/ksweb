@@ -1,0 +1,17 @@
+.about-me-bg{
+    background-color: #464646!important;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #707070 ;
+
+}
+.about-me{
+    padding-top: 15vw;
+}
+
+.text-about-me{
+    color: #707070 ;
+}

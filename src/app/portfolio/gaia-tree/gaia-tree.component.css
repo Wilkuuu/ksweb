@@ -1,0 +1,10 @@
+.gaia-bg{
+    background-image: url("../../../assets/7_gaiatree/gaiatree_bg.svg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#gaia-logo{
+    max-width: 30vm;
+}
