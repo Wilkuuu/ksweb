@@ -5,11 +5,7 @@ import { Bh1Component } from './bh1/bh1.component';
 import { GrafitComponent } from './grafit/grafit.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'grafit', pathMatch: 'full'},
-    {path: 'bh1', component: Bh1Component},
-    {
-        path: 'grafit', component: GrafitComponent
-    },
+    {path: '', redirectTo: '/#dashboard', pathMatch: 'full'}
 ];
 
 @NgModule({
