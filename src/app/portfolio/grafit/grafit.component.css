@@ -10,8 +10,10 @@
 }
 
 .grafit-logo {
-    max-height: 20vh;
-    margin: 2vh;
+    position: absolute;
+    right: 5%;
+    max-height: 35%;
+    top: 5%
 }
 
 .col-6 {
