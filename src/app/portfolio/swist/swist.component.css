@@ -23,3 +23,16 @@
 .text-content{
     padding: 25vh;
 }
+.image-container{
+    margin-top: 20vh;
+    margin-left: 3vw;
+}
+@media all and (max-device-width: 640px) {
+    .image-container{
+        margin-top: 15%;
+        margin-left: 12%;
+    }
+    .watermark{
+        margin: 2% 0 0 10%;
+    }
+}
