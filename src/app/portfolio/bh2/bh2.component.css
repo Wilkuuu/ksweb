@@ -1,7 +1,13 @@
 .koszulka{
     max-height: 100vh;
-    max-width: 33vw;
 }
 .szara{
     margin-top:15vh
+}
+
+@media only screen and (max-width: 480px) {
+    .szara{
+        margin-top:5vh
+
+    }
 }

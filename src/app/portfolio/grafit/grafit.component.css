@@ -10,8 +10,10 @@
 }
 
 .grafit-logo {
-    max-height: 20vh;
-    margin: 2vh;
+    position: absolute;
+    right: 5%;
+    max-height: 35%;
+    top: 5%
 }
 
 .col-6 {
@@ -20,4 +22,19 @@
 }
 .watermark{
 
+}
+@media all and (min-device-width: 1120px) {
+    .col-xl-6 {
+        height: 100vh;
+    }
+
+    .wizytowki-mockup {
+        position: absolute;
+        top: 0;
+    }
+
+    .office-mockup{
+        position: absolute;
+        bottom: 0;
+    }
 }
