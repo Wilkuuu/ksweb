@@ -23,3 +23,18 @@
 .watermark{
 
 }
+@media all and (min-device-width: 1120px) {
+    .col-xl-6 {
+        height: 100vh;
+    }
+
+    .wizytowki-mockup {
+        position: absolute;
+        top: 0;
+    }
+
+    .office-mockup{
+        position: absolute;
+        bottom: 0;
+    }
+}
