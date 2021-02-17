@@ -9,20 +9,21 @@
     background-size: cover;
 }
 
+
 .grafit-logo {
     position: absolute;
-    right: 5%;
-    max-height: 35%;
-    top: 5%
+    max-height: 15%;
 }
 
 .col-6 {
     padding-left: 7px !important;
     padding-right: 8px !important;
 }
-.watermark{
+
+.watermark {
 
 }
+
 @media all and (min-device-width: 1120px) {
     .col-xl-6 {
         height: 100vh;
@@ -33,8 +34,33 @@
         top: 0;
     }
 
-    .office-mockup{
+    .office-mockup {
         position: absolute;
         bottom: 0;
     }
+
+    .img-wizytowki {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .grafit-logo {
+        position: absolute;
+        max-height: 75%;
+    }
+
+}
+
+@media all and (max-device-width: 720px) {
+    .watermark {
+        top: 0;
+    }
+    .wizytowki-mockup{
+        max-height: 21vh;
+    }
+    .grafit-logo {
+        position: absolute;
+        margin: 5% 5% 0 0;
+    }
+
 }
