@@ -1,18 +1,29 @@
-.koszulka{
+.koszulka {
     max-height: 100vh;
 }
-.szara{
-    margin-top:15vh
+
+.szara {
+    margin-top: 15vh
 }
 
-@media only screen and (max-width: 480px) {
-    .szara{
-        margin-top:5vh
+.czarna {
+    position: absolute;
+
+}
+
+@media only screen and (max-width: 780px) {
+    .szara {
+        margin-top: 5vh
 
     }
-    .watermark{
+
+    .watermark {
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .d-block {
+        height: 100vh !important;
     }
 }

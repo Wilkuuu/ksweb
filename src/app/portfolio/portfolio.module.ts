@@ -26,6 +26,6 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
         CommonModule,
         PortfolioRoutingModule,
         AngularSvgIconModule
-    ]
+    ], providers:[]
 })
 export class PortfolioModule { }
