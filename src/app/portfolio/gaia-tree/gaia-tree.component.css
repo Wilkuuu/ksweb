@@ -1,10 +1,25 @@
-.gaia-bg{
+.gaia-bg {
     background-image: url("../../../assets/7_gaiatree/gaiatree_bg.svg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#gaia-logo{
-    max-width: 30vm;
+
+#gaia-logo {
+    max-width: 75%;
+    margin: 30% 0 0 15%;
+}
+
+.title-subpage {
+    margin-top: 15%;
+}
+
+.text {
+    max-width: 80%;
+    margin-top: 5%;
+}
+.gaia-desc{
+    margin-left: 10%;
+    margin-top: 15%;
 }
