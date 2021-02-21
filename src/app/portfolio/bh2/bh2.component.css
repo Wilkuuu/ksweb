@@ -1,13 +1,36 @@
-.koszulka{
+.koszulka {
     max-height: 100vh;
 }
-.szara{
-    margin-top:15vh
+.scrum{
+    max-height: 100vh;
+    padding: 5%
 }
 
-@media only screen and (max-width: 480px) {
-    .szara{
-        margin-top:5vh
+.szara {
+    margin-top: 15vh
+}
+
+.czarna {
+    position: absolute;
+
+}
+
+@media only screen and (max-width: 780px) {
+    .szara {
+        margin-top: 5vh
 
     }
+
+    .watermark {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .d-block {
+        height: 100vh !important;
+    }
+}
+.title-subpage{
+    margin-top: 4%;
 }

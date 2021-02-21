@@ -20,10 +20,12 @@
             <img class="logo-sm" src="./assets/logo.svg" alt="">
         </div>
         <div class="col d-none d-xl-block">
-            <div class="navButtonRight" [routerLink]="['/art']"></div>
+<!--            <div class="navButtonRight" [routerLink]="['/art']"></div>-->
+            <div class="navButtonRight" (click)="goToLink('https://galeria.szumacher.grafit-web.com/')"></div>
         </div>
         <div class="col d-xl-none">
-            <div class="navButtonRightSm" [routerLink]="['/art']"></div>
+<!--            <div class="navButtonRightSm" [routerLink]="['/art']"></div>-->
+            <div class="navButtonRightSm" (click)="goToLink('https://galeria.szumacher.grafit-web.com/')"></div>
         </div>
     </div>
     <div class="row lastRow">
@@ -32,3 +34,5 @@
         </div>
     </div>
 </div>
+
+

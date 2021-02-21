@@ -5,10 +5,13 @@ import { ArtRoutingModule } from './art-routing.module';
 import { ArtComponent } from './art.component';
 
 @NgModule({
-  declarations: [BoardComponent, ArtComponent],
-  imports: [
-    CommonModule,
-    ArtRoutingModule
-  ]
+    declarations: [BoardComponent, ArtComponent],
+    exports: [
+        ArtComponent
+    ],
+    imports: [
+        CommonModule,
+        ArtRoutingModule
+    ]
 })
 export class ArtModule { }

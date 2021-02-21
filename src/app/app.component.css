@@ -43,4 +43,12 @@ body
     height: auto;
     overflow-x: hidden;
 }
+.mobile-bg{
+    background-image: url('../assets/mobile_construct.svg');
+    height: 100vh;
+    background-color: #000000!important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 

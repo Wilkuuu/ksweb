@@ -11,6 +11,9 @@ import { PortfolioModule } from './portfolio/portfolio.module';
 import { OMnieComponent } from './o-mnie/o-mnie.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { GaiaTreeComponent } from './portfolio/gaia-tree/gaia-tree.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
+import { MainServie } from './service/main-servie.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { GaiaTreeComponent } from './portfolio/gaia-tree/gaia-tree.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFullpageModule,
-    PortfolioModule
+    PortfolioModule,
+    AngularSvgIconModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

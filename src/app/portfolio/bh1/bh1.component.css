@@ -1,19 +1,47 @@
-@media all and (max-device-width: 720px){
+
+
+
+#boosthigh1 {
+    height:100vh;
+    max-height: 100vh;
+}
+
+.text {
+    margin-top: 20%;
+}
+
+.bh-logo {
+    max-width: 93%;
+    margin-left: 5%;
+    margin-top: 20%;
+
+}
+
+.watermark {
+    position: relative;
+}
+
+.bh1-xl {
+    height: 100vh;
+}
+
+.bh1-sm{
+    height: 100vh;
+
+}
+@media all and (max-device-width: 720px) {
     .main-text {
         font-size: 18px;
     }
-}
 
+    .bh-logo {
+        max-width: 70%;
+        margin-left: 18%;
+        padding-bottom: 5%;
+    }
 
-#boosthigh1{
-    max-height: 100vh;
-}
-.text-block{
-}
-#bh-logo{
-    margin-top: 15vh;
-
-}
-.watermark{
-    position: absolute;
+    .watermark {
+        position: absolute;
+        left: 0;
+    }
 }

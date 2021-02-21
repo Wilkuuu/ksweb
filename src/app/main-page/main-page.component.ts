@@ -22,12 +22,21 @@ export class MainPageComponent implements OnInit {
             navigation: true,
             // events callback
             afterLoad: (origin, destination, direction) => {
+                if(destination.anchor === 'swist'){
+                    document.querySelector('.image-container').classList.remove('blind');
+                    document.querySelector('.image-container').classList.add('fromButtom');
+                }
             },
+
             onLeave: (section, origin, destination, direction) => {
                 if (origin.anchor === 'o-mnie' || origin.anchor === 'bh1' ) {
                     this.setColorNavbar('#fff');
                 } else {
                     this.setColorNavbar('#333');
+                }
+                if(origin.anchor === 'swist'){
+                    document.querySelector('.image-container').classList.add('blind');
+                    document.querySelector('.image-container').classList.remove('fromButtom');
                 }
             },
             afterRender: () => {

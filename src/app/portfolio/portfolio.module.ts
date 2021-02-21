@@ -9,6 +9,7 @@ import { SkrybeComponent } from './skrybe/skrybe.component';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @NgModule({
     declarations: [GrafitComponent, Bh1Component, Bh2Component, SwistComponent, HopsyComponent, SkrybeComponent, PortfolioComponent, GaleriaComponent],
@@ -23,7 +24,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     ],
     imports: [
         CommonModule,
-        PortfolioRoutingModule
-    ]
+        PortfolioRoutingModule,
+        AngularSvgIconModule
+    ], providers:[]
 })
 export class PortfolioModule { }
