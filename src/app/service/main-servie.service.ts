@@ -11,7 +11,6 @@ export class MainServie {
     getWatermarkColor(bright: boolean = false) {
         if (bright) {
             return getComputedStyle(document.documentElement).getPropertyValue('--watermark-base-bright');
-
         } else {
             return getComputedStyle(document.documentElement).getPropertyValue('--watermark-base');
         }

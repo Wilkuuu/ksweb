@@ -2,7 +2,7 @@
 :root {
     --text-color: #4A4A4A;
     --navbar-color: #fff;
-    --watermark-base: #3d3030;
+    --watermark-base: #707070;
     --watermark-base-bright: #fff;
 }
 
@@ -99,4 +99,7 @@ body {
         font-size: 12px;
     }
 
+}
+.full{
+    height: 100vh;
 }

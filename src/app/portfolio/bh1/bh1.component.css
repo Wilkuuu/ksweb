@@ -2,15 +2,19 @@
 
 
 #boosthigh1 {
+    height:100vh;
     max-height: 100vh;
 }
 
-.text-block {
+.text {
+    margin-top: 20%;
 }
 
 .bh-logo {
-    max-width: 80%;
-    margin-left: 15%;
+    max-width: 93%;
+    margin-left: 5%;
+    margin-top: 20%;
+
 }
 
 .watermark {

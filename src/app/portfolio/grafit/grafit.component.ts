@@ -25,9 +25,9 @@ export class GrafitComponent implements OnInit {
 
     getWatermarkColor() {
         if ($(window).height() <= 800) {
-            return this.mainService.getWatermarkColor(true);
+            return this.mainService.getWatermarkColor();
         } else {
-            return '#ffffff';
+            return this.mainService.getWatermarkColor(true);
 
         }
 

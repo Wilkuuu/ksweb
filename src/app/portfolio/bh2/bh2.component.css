@@ -1,6 +1,10 @@
 .koszulka {
     max-height: 100vh;
 }
+.scrum{
+    max-height: 100vh;
+    padding: 5%
+}
 
 .szara {
     margin-top: 15vh
@@ -26,4 +30,7 @@
     .d-block {
         height: 100vh !important;
     }
+}
+.title-subpage{
+    margin-top: 4%;
 }
