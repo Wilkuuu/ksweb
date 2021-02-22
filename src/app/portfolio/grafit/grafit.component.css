@@ -20,9 +20,7 @@
     padding-right: 8px !important;
 }
 
-.watermark {
 
-}
 
 @media all and (min-device-width: 1120px) {
     .col-xl-6 {
@@ -52,9 +50,7 @@
 }
 
 @media all and (max-device-width: 720px) {
-    .watermark {
-        top: 0;
-    }
+
     .wizytowki-mockup{
         max-height: 20vh;
     }

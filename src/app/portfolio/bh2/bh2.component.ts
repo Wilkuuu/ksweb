@@ -1,17 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import {MainServie} from '../../service/main-servie.service';
+import { MainServie } from '../../service/main-servie.service';
 
 @Component({
-  selector: 'app-bh2',
-  templateUrl: './bh2.component.html',
-  styleUrls: ['./bh2.component.css']
+    selector: 'app-bh2',
+    templateUrl: './bh2.component.html',
+    styleUrls: ['./bh2.component.css']
 })
 export class Bh2Component implements OnInit {
-  watermarkStyle: any = {fill: this.mainService.getWatermarkColor(), position: 'absolute', width: '10vh', zIndex: 1, left: '2%'};
+    watermarkStyle: any = {
+        fill: this.mainService.getWatermarkColor(),
+        position: 'absolute',
+        width: '10vh',
+        zIndex: 1,
+        left: '2%',
+        animation: this.mainService.getWatermarkAnimation()
+    };
 
-  constructor(private mainService: MainServie) { }
+    constructor(private mainService: MainServie) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

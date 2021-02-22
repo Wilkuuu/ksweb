@@ -1,0 +1,50 @@
+.web-demo {
+    max-width: 50vw;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-gallery {
+    /* The image used */
+    background-image: url('../../../assets/8_galeria_portfolio/obrazy.png');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria-image {
+    width: 100vh;
+}
+
+.col-4 {
+    padding: 0;
+}
+
+.col-8 {
+    padding: 0;
+
+}
+
+.row {
+    height: 100vh;
+}
+
+.img-full {
+    height: 100vh;
+}
+
+.text {
+    max-width: 68%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.title-subpage {
+    margin-top: 25%;
+    margin-left: 5%;
+
+}

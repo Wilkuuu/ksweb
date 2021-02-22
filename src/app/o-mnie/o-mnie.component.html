@@ -1,31 +1,33 @@
 <div class="about-me-bg">
     <div class="row">
         <div class="col col-sm">
-            <svg-icon [svgStyle]="watermarkStyle"  src="assets/logo.svg"></svg-icon>
+            <svg-icon [svgStyle]="watermarkStyle" src="assets/logo.svg" href="#dashboard"></svg-icon>
             <div class="container" class="about-me">
                 <div class="row">
-                    <h2 class="header-about-me">O mnie</h2>
+                    <h2 class="header-about-me">About me</h2>
                 </div>
                 <div class="text text-about-me">
                     <p>I am Klaudia Szumacher a graphic designer and painter. My vast variety of skills is continuously
                         expanding. I am passionate about creating products with a strong visual identity. It helps
                         brands and companies move to the next level and increase user engagement. I am not afraid to be
                         innovative, precise, take advantage of new technologies and push the boundaries of design.
-                        As they say:
-                       <br><strong>The devil is in pixels.</strong></p>
+                        As they say:</p>
+                    <div class="d-flex justify-content-center">
+                        <strong>The devil is in pixels.</strong>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col col-sm">
             <div class="container" class="about-me">
                 <div class="row">
-                    <h2 class="header-about-me">skontaktuj się ze mną</h2>
+                    <h2 class="header-about-me">contact me</h2>
                 </div>
-                <div class="text text-about-me">
-                    513-738-040
+                <div class="text text-contact-me">
+                    <svg-icon class="icon-contact" [svgStyle]="contactIcon" src="assets/icons/phone_icon.svg"></svg-icon>513-738-040
                 </div>
-                <div class="text text-about-me">
-                    szumacher.klaudia@gmail.com
+                <div class="text text-contact-me">
+                    <svg-icon class="icon-contact" [svgStyle]="contactIcon" src="assets/icons/mail_icon.svg"></svg-icon>szumacher.klaudia@gmail.com
                 </div>
             </div>
         </div>
