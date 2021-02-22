@@ -7,7 +7,9 @@ import { MainServie } from '../../service/main-servie.service';
     styleUrls: ['./bh1.component.css']
 })
 export class Bh1Component implements OnInit {
-    watermarkStyle: any = {fill: this.mainService.getWatermarkColor(), position: 'relative', width: '10vh'};
+    watermarkStyle: any = {
+        fill: this.mainService.getWatermarkColor(), position: 'relative', width: '10vh', animation: this.mainService.getWatermarkAnimation()
+    };
 
     constructor(private mainService: MainServie) {
 

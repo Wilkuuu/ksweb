@@ -10,7 +10,13 @@ import * as $ from 'jquery';
     styleUrls: ['./grafit.component.css']
 })
 export class GrafitComponent implements OnInit {
-    watermarkStyle = {fill: this.getWatermarkColor(), width: '10vh', position: 'absolute', zIndex: 1};
+    watermarkStyle = {
+        fill: this.getWatermarkColor(),
+        width: '10vh',
+        position: 'absolute',
+        zIndex: 1,
+        animation: this.mainService.getWatermarkAnimation()
+    };
 
 
     constructor(private route: ActivatedRoute, private animacjaService: AnimacjaService, private mainService: MainServie) {
@@ -30,7 +36,8 @@ export class GrafitComponent implements OnInit {
             return this.mainService.getWatermarkColor(true);
 
         }
-
     }
+
+
 
 }

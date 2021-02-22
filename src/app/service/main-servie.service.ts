@@ -15,5 +15,8 @@ export class MainServie {
             return getComputedStyle(document.documentElement).getPropertyValue('--watermark-base');
         }
     }
+    getWatermarkAnimation() {
+        return 'heartbeat 1.5s ease-in-out infinite both';
+    }
 
 }
