@@ -14,6 +14,10 @@ export class OMnieComponent implements OnInit {
         zIndex: 1,
         animation: this.mainService.getWatermarkAnimation()
     };
+    contactIcon = {
+        marginLeft: '2%',
+        fill: '#707070',
+    };
 
     constructor(private mainService: MainServie) {
     }
