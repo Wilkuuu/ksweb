@@ -1,62 +1,84 @@
-.bg {
-    /* The image used */
-    background-image: url("../../../assets/1_grafit/fire_bg.png");
-    /* Full height */
+/*.bg {*/
+/*    !* The image used *!*/
+/*    background-image: url("../../../assets/1_grafit/fire_bg.png");*/
+/*    !* Full height *!*/
+/*    height: 100%;*/
+/*    !* Center and scale the image nicely *!*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+
+/*.grafit-logo {*/
+/*    position: absolute;*/
+/*    max-height: 15%;*/
+/*}*/
+
+/*.col-6 {*/
+/*    padding-left: 7px !important;*/
+/*    padding-right: 8px !important;*/
+/*}*/
+
+
+/*@media all and (min-device-width: 1120px) {*/
+/*    .col-xl-6 {*/
+/*        height: 100vh;*/
+/*    }*/
+
+/*    .wizytowki-mockup {*/
+/*        position: absolute;*/
+/*        top: 0;*/
+/*    }*/
+
+/*    .office-mockup {*/
+/*        position: absolute;*/
+/*        bottom: 0;*/
+/*    }*/
+
+/*    .img-wizytowki {*/
+/*        height: 100vh;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .grafit-logo {*/
+/*        position: absolute;*/
+/*        max-height: 50%;*/
+/*    }*/
+
+/*}*/
+
+/*@media all and (max-device-width: 720px) {*/
+
+/*    .wizytowki-mockup{*/
+/*        max-height: 20vh;*/
+/*    }*/
+/*    .grafit-logo {*/
+/*        position: absolute;*/
+/*        margin: 5% 5% 0 0;*/
+/*    }*/
+
+/*}*/
+
+.grafit-bg {
+    background-color: #3A3A3A !important;
     height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
+.mockup-box {
 
-.grafit-logo {
+}
+
+.img {
     position: absolute;
-    max-height: 15%;
+    max-height: 100vh;
+    max-width: 100vw;
 }
-
-.col-6 {
-    padding-left: 7px !important;
-    padding-right: 8px !important;
+.grafit-mockup-dot{
+    position: relative;
+    top: 18%;
+    left: 60%;
 }
-
-
-
-@media all and (min-device-width: 1120px) {
-    .col-xl-6 {
-        height: 100vh;
-    }
-
-    .wizytowki-mockup {
-        position: absolute;
-        top: 0;
-    }
-
-    .office-mockup {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .img-wizytowki {
-        height: 100vh;
-        width: 100%;
-    }
-
-    .grafit-logo {
-        position: absolute;
-        max-height: 50%;
-    }
-
-}
-
-@media all and (max-device-width: 720px) {
-
-    .wizytowki-mockup{
-        max-height: 20vh;
-    }
-    .grafit-logo {
-        position: absolute;
-        margin: 5% 5% 0 0;
-    }
-
+.row{
+    padding: 0 15%;
 }

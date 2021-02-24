@@ -10,9 +10,10 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { TooltipDotComponent } from '../common/tooltip-dot/tooltip-dot.component';
 
 @NgModule({
-    declarations: [GrafitComponent, Bh1Component, Bh2Component, SwistComponent, HopsyComponent, SkrybeComponent, PortfolioComponent, GaleriaComponent],
+    declarations: [GrafitComponent, Bh1Component, Bh2Component, SwistComponent, HopsyComponent, SkrybeComponent, PortfolioComponent, GaleriaComponent, TooltipDotComponent],
     exports: [
         PortfolioComponent,
         GrafitComponent,
@@ -20,12 +21,14 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
         Bh2Component,
         SwistComponent,
         SkrybeComponent,
-        GaleriaComponent
+        GaleriaComponent,
+
     ],
     imports: [
         CommonModule,
         PortfolioRoutingModule,
-        AngularSvgIconModule
-    ], providers:[]
+        AngularSvgIconModule,
+
+    ], providers: []
 })
 export class PortfolioModule { }

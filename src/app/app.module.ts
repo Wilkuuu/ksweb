@@ -13,27 +13,28 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { GaiaTreeComponent } from './portfolio/gaia-tree/gaia-tree.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
-import { MainServie } from './service/main-servie.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    NotFoundComponent,
-    OMnieComponent,
-    MainPageComponent,
-    GaiaTreeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    AngularFullpageModule,
-    PortfolioModule,
-    AngularSvgIconModule.forRoot(),
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        NotFoundComponent,
+        OMnieComponent,
+        MainPageComponent,
+        GaiaTreeComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        AngularFullpageModule,
+        PortfolioModule,
+        AngularSvgIconModule.forRoot(),
+        HttpClientModule
+    ],
+    providers: [],
+    exports: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
