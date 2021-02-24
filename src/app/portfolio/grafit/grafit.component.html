@@ -45,9 +45,9 @@
     <div class="row">
         <div class="mockup-box">
             <img class="img img-fluid" src="assets/base/Grafit/Grafit_business_card.png" alt="">
-            <app-tooltip-dot class="grafit-mockup-dot" [image]="'Grafit/logo_grafit.svg'" [text]="description"></app-tooltip-dot>
-
-            <img class="img img-fluid" src="assets/base/Grafit/Grafit_business_card.png" alt="">
+            <app-tooltip-dot class="grafit-mockup-dot" [image]="'Grafit/logo_grafit.svg'" [text]="descriptionLogo"></app-tooltip-dot>
+            <img class="grafit-building " src="assets/base/Grafit/grafit_szyld.jpg" alt="">
+            <app-tooltip-dot (mouseenter)="maximalizeImg()" (mouseleave)="minimalizeImg()" class="szyld-dot" [text]="descriptionBuilding"></app-tooltip-dot>
 
         </div>
     </div>

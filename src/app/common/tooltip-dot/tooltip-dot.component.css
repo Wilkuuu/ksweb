@@ -20,17 +20,31 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.item-hints .hint::before{ /* //rotated squre */
+/*.item-hints .hint::before{ !* //rotated squre *!*/
+/*    background-color: #fff;*/
+/*    width: 8px;*/
+/*    height: 8px;*/
+/*    z-index: 2;*/
+/*    -webkit-clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);*/
+/*    clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    -webkit-transform: translate(-50%,-50%);*/
+/*    transform: translate(-50%,-50%);*/
+/*}*/
+.item-hints .hint::before{
     background-color: #fff;
     width: 8px;
     height: 8px;
-    z-index: 2;
-    -webkit-clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
-    clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }

@@ -60,6 +60,7 @@
 
 /*}*/
 
+
 .grafit-bg {
     background-color: #3A3A3A !important;
     height: 100%;
@@ -76,9 +77,27 @@
 }
 .grafit-mockup-dot{
     position: relative;
-    top: 18%;
+    top: 10%;
     left: 60%;
 }
+.szyld-dot{
+    position: relative;
+    left: 255%;
+    bottom: 6%;
+}
+
 .row{
     padding: 0 15%;
+}
+.grafit-building{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: var(--building-mock-width);
+    max-width: var(--building-mock-width);
+    transition: .3s width ease-in-out;
+
+}
+.grafit-building:hover{
+
 }
