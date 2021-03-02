@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TooltipDotComponent implements OnInit {
   @Input()text = 'Tekst testowy';
   @Input()image = null;
-  @Input()orientation = null;
+  @Input()orientation = 'right';
 
   constructor() { }
 

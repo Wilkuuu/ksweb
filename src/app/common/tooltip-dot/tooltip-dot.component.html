@@ -1,10 +1,26 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
       rel="stylesheet">
-<div class="item-hints">
+<div *ngIf="orientation === 'right'" class="item-hints">
     <div class="hint" data-position="4"><!-- is-hint -->
         <span class="hint-radius"></span>
         <span class="hint-dot"></span>
         <div class="hint-content do--split-children">
+            <div class="row">
+                <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">
+                </div>
+                <div class="col-10"><p>{{text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="orientation === 'left'" class="item-hints">
+<!--    <h2>Left</h2>-->
+    <div class="hint-left" data-position="4"><!-- is-hint -->
+        <span class="hint-radius-left"></span>
+        <span class="hint-dot-left"></span>
+        <div class="hint-content-left do--split-children">
             <div class="row">
                 <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">
                 </div>
