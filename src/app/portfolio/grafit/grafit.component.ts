@@ -22,7 +22,8 @@ export class GrafitComponent implements OnInit {
     including invention of brand’s name. I created the name basing on programmers jargon and
     reffering to ‘brilliant code’. I also planned company’s color, logo and business cards.
     As an addition to whole set I designed signboard for GrafIT’s potential headquarters.`;
-    descriptionBuilding = '';
+
+    descriptionBuilding = 'Tutaj tekst opisu ';
     constructor(private route: ActivatedRoute, private animacjaService: AnimacjaService, private mainService: MainServie) {
     }
 
