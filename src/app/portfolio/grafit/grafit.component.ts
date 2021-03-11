@@ -23,7 +23,7 @@ export class GrafitComponent implements OnInit {
     reffering to ‘brilliant code’. I also planned company’s color, logo and business cards.
     As an addition to whole set I designed signboard for GrafIT’s potential headquarters.`;
 
-    descriptionBuilding = 'Tutaj tekst opisu ';
+    descriptionBuilding = 'As an addition to whole set i designed signboard for GrafitIT`s potential';
     constructor(private route: ActivatedRoute, private animacjaService: AnimacjaService, private mainService: MainServie) {
     }
 

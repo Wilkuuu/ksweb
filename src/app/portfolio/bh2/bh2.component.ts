@@ -16,6 +16,8 @@ export class Bh2Component implements OnInit {
         animation: this.mainService.getWatermarkAnimation()
     };
 
+    tShirtDesc = 'Opis koszulki';
+
     constructor(private mainService: MainServie) {
     }
 

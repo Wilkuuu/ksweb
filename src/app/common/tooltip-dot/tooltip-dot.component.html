@@ -1,30 +1,32 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap"
       rel="stylesheet">
-<div *ngIf="orientation === 'right'" class="item-hints">
-    <div class="hint" data-position="4"><!-- is-hint -->
-        <span class="hint-radius"></span>
-        <span class="hint-dot"></span>
-        <div class="hint-content do--split-children">
-            <div class="row">
-                <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">
-                </div>
-                <div class="col-10"><p>{{text}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div *ngIf="orientation === 'right'" class="item-hints">-->
+<!--    <div class="hint" data-position="4">&lt;!&ndash; is-hint &ndash;&gt;-->
+<!--        <span class="hint-radius"></span>-->
+<!--        <span class="hint-dot"></span>-->
+<!--        <div class="hint-content do&#45;&#45;split-children">-->
+<!--            <div class="row">-->
+<!--                <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-10"><p>{{text}}</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-<div *ngIf="orientation === 'left'" class="item-hints">
-<!--    <h2>Left</h2>-->
-    <div class="hint-left" data-position="4"><!-- is-hint -->
-        <span class="hint-radius-left"></span>
-        <span class="hint-dot-left"></span>
-        <div class="hint-content-left do--split-children">
-            <div class="row">
-                <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">
-                </div>
-                <div class="col-10"><p class="left-dot-text">{{text}}</p>
+<div class="content">
+    <div class="nice-info">
+        <div class="nice-info__point" [ngClass]="orientation[direction]">
+            <div class="nice-info__line"></div>
+            <div class="nice-info__content">
+                <div class="nice-info__text">
+                    <div class="row">
+                        <div class="col-2"><img class="tooltip-img" *ngIf="image" src="assets/base/{{image}}" alt="">
+                        </div>
+                        <div class="col-10"><p>{{text}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

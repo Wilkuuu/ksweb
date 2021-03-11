@@ -1,0 +1,188 @@
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+$c-nice-info: #fff;
+$point-size: 100px;
+$small-point-size: 20px;
+$space: 3 * $point-size;
+$border-size: 1px;
+
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600,900&display=swap');
+
+body, html {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh
+}
+
+.nice-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  &__point {
+    width: $point-size;
+    height: $point-size;
+    border-radius: $point-size;
+    border: $border-size solid $c-nice-info;
+
+    &::after {
+      content: '';
+      display: block;
+      width: $small-point-size;
+      height: $small-point-size;
+      background-color: $c-nice-info;
+      border-radius: 100%;
+      position: absolute;
+      left: $point-size / 2 - $small-point-size / 2;
+      bottom: $point-size / 2 - $small-point-size / 2;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: $point-size;
+      height: $point-size;
+      background-color: $c-nice-info;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: .1s linear;
+    }
+
+    &:hover {
+      &::before {
+        opacity: .05;
+        transform: scale(5);
+      }
+    }
+  }
+
+  &__line {
+    transform: rotate(-45deg);
+    position: absolute;
+    width: $point-size + $border-size / 2;
+    height: $point-size + $border-size / 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: .1s linear opacity;
+    transform-origin: center center;
+    top: -$border-size / 2;
+    left: -$border-size / 2;
+
+    &::after {
+      background: $c-nice-info;
+      content: '';
+      display: block;
+      width: $border-size;
+      height: sqrt(2) * ($space - $point-size / 2);
+      left: $point-size / 2 - $border-size / 2;
+      bottom: $point-size / 2  - $border-size / 2;
+      position: absolute;
+    }
+
+    .nice-info:hover & {
+      opacity: 1;
+    }
+
+    .nice-info--top-left & {
+    }
+
+    .nice-info--top-right & {
+      transform: rotate(45deg);
+    }
+
+    .nice-info--bottom-right & {
+      transform: rotate(135deg);
+    }
+
+    .nice-info--bottom-left & {
+      transform: rotate(-135deg);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: $space;
+    right: $space;
+    border-bottom: $border-size solid $c-nice-info;
+    min-width: 400px;
+    max-width: 500px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .1s linear;
+    height: 0;
+
+    .nice-info:hover & {
+      opacity: 1;
+    }
+
+    .nice-info--top-left & {
+    }
+
+    .nice-info--top-right & {
+      left: $space;
+      right: initial;
+    }
+
+    .nice-info--bottom-left & {
+      top: $space;
+      right: $space;
+      bottom: initial;
+      border: 0;
+      border-top: $border-size solid $c-nice-info;
+    }
+
+    .nice-info--bottom-right & {
+      top: $space;
+      left: $space;
+      bottom: initial;
+      border: 0;
+      border-top: $border-size solid $c-nice-info;
+    }
+  }
+
+  &__text {
+    color: $c-nice-info;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0
+  }
+
+}
+
+.tooltip-img {
+  max-height: 100%;
+  max-width: 100%;
+  z-index: 1 !important;
+}
+
+
+.left-dot-text {
+  top: 0;
+  margin-top: -100px;
+}
+
